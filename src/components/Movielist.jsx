@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import GlobalApi from '../services/GlobalApi'
 import MovieCard from './MovieCard';
 import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
-import HMovieCard from './HMovieCard';
-function MovieList({genreId,index_}){
+import HrMovieCard from './HrMovieCard';
+function Movielist({genreId,index_}){
     const [movieList,setMovieList]=useState([])
     const elementRef=useRef(null);
     useEffect(()=>{
@@ -35,7 +35,7 @@ function MovieList({genreId,index_}){
      scrollbar-none scroll-smooth pt-4 px-3 pb-4'>
         {movieList.map((item,index)=>(
            <>
-          {index_%3==0?<HMovieCard movie={item} className=''/>:<MovieCard movie={item} />}
+          {index_%3==0?<HrMovieCard movie={item} className=''/>:<MovieCard movie={item} />}
            </> 
         ))}
     </div>
@@ -48,4 +48,4 @@ function MovieList({genreId,index_}){
   )
 }
 
-export default MovieList
+export default Movielist
