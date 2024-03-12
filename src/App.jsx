@@ -6,12 +6,14 @@ import ProductionHouse from './components/productionHouse'
 import GenreMovieList from './components/GenreMovieList'
 
 function App() {
+  
   return (
     <div>
       <Header />
       <Slider />
       <ProductionHouse />
       <GenreMovieList/>
+     
     </div>
   )
 }

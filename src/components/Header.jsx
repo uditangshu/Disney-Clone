@@ -5,6 +5,8 @@ import { HiHome, HiMagnifyingGlass, HiStar, HiPlayCircle, HiTv } from "react-ico
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
 import Headeritem from './Headeritem';
 
+
+    
 function Header() {
     const [toggle, setToggle] = useState(false);
     const menu = [
@@ -35,7 +37,7 @@ function Header() {
     ];
 
     return (
-        <div className="flex justify-between items-center w-screen mt-3 ">
+        <div className="flex justify-between items-center w-screen mt- mb-3 shadow-lg shadow-grey-600">
             <div className='flex gap-3 items-center mt-0'>
                 <img src={logo} className='w-[80px] md:w-[115px] object-cover ' />
                 <div className='hidden md:flex gap-8 cursor-pointer'>
@@ -72,5 +74,7 @@ function Header() {
         </div>
     );
 }
+
+
 
 export default Header;
