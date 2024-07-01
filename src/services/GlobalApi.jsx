@@ -15,3 +15,5 @@ export default{
     getTrendingVideos,
     getMovieByGenreId
 }
+
+//use vpn to access this because the Indian government has banned this api
